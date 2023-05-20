@@ -15,7 +15,7 @@ RSYNC_OPTS="-avh -P"
 while true; 
 do 
 
-  if [ "$(stat -L -c '%d' $DATA_DIR)" = "$(stat -L -c '%d' $DATA_DIR2" ]; then  
+  if [ "$(stat -L -c '%d' $DATA_DIR)" = "$(stat -L -c '%d' $DATA_DIR2)" ]; then  
     echo "$DATA_DIR and $DATA_DIR2 are on same partition, copying only to $DATA_DIR2" 
     rsync $(RSYNC_OPTS) $SOURCE $DATA_DIR2
   else 
