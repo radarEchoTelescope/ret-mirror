@@ -6,7 +6,7 @@ DATA_DIR2="/data2" # this is on OS disk
 
 SOURCE="retsm@192.168.97.10:/data0"
 
-RSYNC_OPTS="-avh -P" 
+RSYNC_OPTS="-avh -P -L" 
 
 # check to see if DATA_DIR0 is actualy on a different disk than DATA_DIR1, otherwise maybe it failed
 # so just copy to DATA_DIR2
