@@ -4,7 +4,7 @@ SLEEP_AMT=30
 DATA_DIR="/data" #this is on second disk
 DATA_DIR2="/data2" # this is on OS disk
 
-SOURCE="192.168.97.10:/data"
+SOURCE="192.168.97.10:/data0"
 
 RSYNC_OPTS="-avh -P" 
 
